@@ -1,26 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-  <meta charset="utf-8" />
-  <title>Ionic App</title>
-
-  <base href="/" />
-
-  <meta name="color-scheme" content="light dark" />
-  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <meta name="format-detection" content="telephone=no" />
-  <meta name="msapplication-tap-highlight" content="no" />
-
-  <link rel="icon" type="image/png" href="assets/icon/favicon.png" />
-
-  <!-- add to homescreen for ios -->
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recicloneta</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <app-root></app-root>
+  <header>
+    <div class="logo">
+      <h1>Recicloneta</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="hero-content">
+        <h2>¡Recicla fácil y rápido con Recicloneta!</h2>
+        <p>Conviértete en un héroe del reciclaje y ayuda al planeta.</p>
+        <a href="#servicios" class="btn">Ver Servicios</a>
+      </div>
+    </section>
+
+    <section id="servicios" class="services">
+      <h2>Servicios</h2>
+      <div class="service-card">
+        <h3>Recolección de Residuos</h3>
+        <p>Te recogemos tus materiales reciclables en la puerta de tu casa.</p>
+      </div>
+      <div class="service-card">
+        <h3>Puntos de Reciclaje</h3>
+        <p>Encuentra puntos de reciclaje cercanos a tu ubicación.</p>
+      </div>
+      <div class="service-card">
+        <h3>Educación Ambiental</h3>
+        <p>Aprende más sobre cómo reciclar y reducir tu huella ecológica.</p>
+      </div>
+    </section>
+
+    <section id="contacto" class="contact">
+      <h2>Contacto</h2>
+      <form>
+        <input type="text" placeholder="Nombre" required>
+        <input type="email" placeholder="Correo Electrónico" required>
+        <textarea placeholder="Mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Recicloneta. Todos los derechos reservados.</p>
+  </footer>
 </body>
 
 </html>
