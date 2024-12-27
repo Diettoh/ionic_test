@@ -1,9 +1,9 @@
 import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
-  appName: 'tabs',
-  webDir: 'www'
+  appId: 'com.example.app',
+  appName: 'ionic_test',
+  webDir: 'src'
 };
 
 export default config;
